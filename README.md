@@ -1,1 +1,1 @@
-# francisco-challenge
+docker build -t php_ext .
