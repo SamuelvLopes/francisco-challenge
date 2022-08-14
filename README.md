@@ -1,6 +1,8 @@
 docker build -t php_ext .
-1- Preparar ambiente
-2- Preparar mini-framework
+docker build -t react_img .
+
+1- Preparar ambiente -ok
+2- Preparar mini-framework -ok
 3- Preparar Banco de dados
 4- Detalhar funções
 5- FrontEnd

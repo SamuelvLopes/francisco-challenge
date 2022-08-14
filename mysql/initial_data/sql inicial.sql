@@ -1,43 +1,75 @@
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE `crud_samuel`;
+USE `crud_samuel`;
 
-CREATE DATABASE `blog`;
-USE `blog`;
 
-# Dump of table posts
-# ------------------------------------------------------------
+DROP TABLE IF EXISTS `produto_unidade_medida`;
 
-DROP TABLE IF EXISTS `posts`;
-
-CREATE TABLE `posts` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(200) NOT NULL DEFAULT '',
-  `body` text NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE `produto_unidade_medida` (
+  `pum_id` VARCHAR(3) NOT NULL,
+  `pum_descricao` varchar(150) NOT NULL,
+  CONSTRAINT pum_unique_descricao UNIQUE(`pum_descricao`),
+  PRIMARY KEY (`pum_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `posts` WRITE;
-/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+LOCK TABLES `produto_unidade_medida` WRITE;
 
-INSERT INTO `posts` (`id`, `title`, `body`)
+
+INSERT INTO `produto_unidade_medida` (`pum_id`, `pum_descricao`)
 VALUES
-	(1,'Primeiro Post','Conteúdo do primeiro post'),
-	(2,'Segundo Post','Conteúdo do segundo post'),
-	(3,'Terceiro Post','Conteúdo do terceiro post');
+	('UND','UNIDADE'),
+	('CX','CAIXA'),
+	('KG','QUILO'),
+	('L','LITRO'),
+	('M','METRO');
 
-/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `produto_tipo`;
+
+CREATE TABLE `produto_tipo` (
+  `pt_id` VARCHAR(2) NOT NULL,
+  `pt_descricao` varchar(150) NOT NULL,
+  CONSTRAINT pum_unique_descricao UNIQUE(`pt_descricao`),
+  PRIMARY KEY (`pt_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `produto_tipo` WRITE;
+
+
+INSERT INTO `produto_tipo` (`pt_id`, `pt_descricao`)
+VALUES
+	('MP','MATERIA PRIMA'),
+	('PA','PRODUTO ACABADO');
+
+
 UNLOCK TABLES;
 
 
+DROP TABLE IF EXISTS `produto_grupo`;
 
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE `produto_grupo` (
+  `pg_id` INT NOT NULL AUTO_INCREMENT,
+  `pg_descricao` varchar(150) NOT NULL,
+  CONSTRAINT pg_unique_descricao UNIQUE(`pg_descricao`),
+  PRIMARY KEY (`pg_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `produto`;
+
+CREATE TABLE `produto` (
+  `descricao` VARCHAR(150) NOT NULL,
+  `grupo` INT NOT NULL,  
+  `ean` VARCHAR(13) NOT NULL,  
+  `saldo_inicial` DECIMAL(8,2) NOT NULL DEFAULT 0,
+  `unidade_medida` VARCHAR(3) NOT NULL,  
+  `tipo` VARCHAR(2) NOT NULL,
+   PRIMARY KEY (`ean`),
+   CONSTRAINT pum_unique_descricao UNIQUE(`descricao`),
+   FOREIGN KEY (grupo) REFERENCES produto_grupo(pg_id),
+   FOREIGN KEY (unidade_medida) REFERENCES produto_unidade_medida(pum_id),
+   FOREIGN KEY (tipo) REFERENCES produto_tipo(pt_id)
+  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
