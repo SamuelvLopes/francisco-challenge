@@ -8,6 +8,7 @@
 - 8080->backend-php
 - 3306->mysql
 ### CASO OUTRA APLICAÇÃO JÁ ESTEJA USANDO ALGUMA DESSAS PORTAS OCORRERÁ UM ERRO.
+#### LEMBRANDO QUE APÓS SUBIR A APLICAÇÃO COM "docker-compose up" o servidor demora um pouco para subir e estabilizar
 
 ## Orientações Windows
 - BAIXAR DOCKER DESKTOP(https://www.docker.com/products/docker-desktop/)
