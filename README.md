@@ -7,7 +7,7 @@
 - 3000->ambiente para dev react
 - 8080->backend-php
 - 3306->mysql
-### CASO OUTRA APLICAÇÃO JÁ ESTEJA USANDO ESSAS PORTAS OCORRERÁ UM ERRO.
+### CASO OUTRA APLICAÇÃO JÁ ESTEJA USANDO ALGUMA DESSAS PORTAS OCORRERÁ UM ERRO.
 
 ## Orientações Windows
 - BAIXAR DOCKER DESKTOP(https://www.docker.com/products/docker-desktop/)
