@@ -5,7 +5,7 @@
 ## EXECUTAR .BAT
 
 ## Orientações Linux
-## Baixar
+## recomendado UBUTU 20.04.4 LTS
 
 ## docker build -t php_ext .
 
