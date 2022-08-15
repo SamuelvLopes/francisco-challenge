@@ -1,8 +1,8 @@
 ### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
 
 ## Orientações Windows
-### BAIXAR DOCKER DESKTOP
-### EXECUTAR .BAT
+- BAIXAR DOCKER DESKTOP
+- EXECUTAR .BAT
 
 ## Orientações Linux
 ### recomendado UBUTU 20.04.4 LTS
