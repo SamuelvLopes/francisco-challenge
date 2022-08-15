@@ -1,0 +1,55 @@
+Array
+(
+    [0] => Array
+        (
+            [REDIRECT_STATUS] => 200
+            [HTTP_HOST] => localhost:8080
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_ACCEPT] => application/json, text/plain, */*
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36
+            [HTTP_SEC_GPC] => 1
+            [HTTP_ORIGIN] => http://localhost
+            [HTTP_SEC_FETCH_SITE] => same-site
+            [HTTP_SEC_FETCH_MODE] => cors
+            [HTTP_SEC_FETCH_DEST] => empty
+            [HTTP_REFERER] => http://localhost/
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+            [HTTP_ACCEPT_LANGUAGE] => pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+            [SERVER_SIGNATURE] => <address>Apache/2.4.54 (Debian) Server at localhost Port 8080</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.54 (Debian)
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => 172.20.0.5
+            [SERVER_PORT] => 8080
+            [REMOTE_ADDR] => 172.20.0.1
+            [DOCUMENT_ROOT] => /var/www/html
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [SERVER_ADMIN] => webmaster@localhost
+            [SCRIPT_FILENAME] => /var/www/html/index.php
+            [REMOTE_PORT] => 52292
+            [REDIRECT_URL] => /api/grupos
+            [REDIRECT_QUERY_STRING] => url=api/grupos
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => url=api/grupos
+            [REQUEST_URI] => /api/grupos
+            [SCRIPT_NAME] => /index.php
+            [PHP_SELF] => /index.php
+            [REQUEST_TIME_FLOAT] => 1660546467.8926
+            [REQUEST_TIME] => 1660546467
+            [argv] => Array
+                (
+                    [0] => url=api/grupos
+                )
+
+            [argc] => 1
+        )
+
+)
+
+ 
+ 

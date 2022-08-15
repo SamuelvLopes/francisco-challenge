@@ -37,7 +37,12 @@ services:
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
       
- 
+  web:
+    image: nginx
+    volumes:
+      - ./nginx-app:/usr/share/nginx/html
+    ports:
+      - "80:80"
    
 volumes:
   db_data:
