@@ -1,0 +1,9 @@
+<?php
+//header('Content-Type: charset=utf-8');
+exit();
+$root_dir=__dir__;
+require_once('system/core.php');
+
+
+
+?>

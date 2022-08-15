@@ -3,6 +3,7 @@
 class Api extends BaseController{
 
     
+    
     public function index() 
     {
         
@@ -54,14 +55,22 @@ class Api extends BaseController{
     }
     
     public function export() {
+        
     header("Content-Disposition: attachment; filename=export_".date('Y_m_d___H_i_s').".doc");
     
-    echo md5(time())."\r\n";
-echo md5(time())."\r\n";
-echo md5(time())."\r\n";
-echo md5(time())."\r\n";
-echo md5(time())."\r\n";
-echo md5(time())."\r\n";
+    $sql="
+        SELECT p.*,pg.*,pt.*,pum.* FROM produto p 
+        INNER JOIN produto_grupo pg ON 
+        pg.pg_id=p.grupo 
+        INNER JOIN produto_tipo pt ON
+        pt.pt_id=p.tipo
+        INNER JOIN produto_unidade_medida pum ON
+        pum.pum_id=p.unidade_medida
+         ";
+    
+    $result= $this->get_array($this->query($sql));
+    
+    $this->view('export', $result);
 
     }    
     public function grupos() {

@@ -1,0 +1,56 @@
+Array
+(
+    [0] => Array
+        (
+            [REDIRECT_STATUS] => 200
+            [HTTP_HOST] => localhost:8080
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36
+            [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+            [HTTP_SEC_GPC] => 1
+            [HTTP_SEC_FETCH_SITE] => none
+            [HTTP_SEC_FETCH_MODE] => navigate
+            [HTTP_SEC_FETCH_USER] => ?1
+            [HTTP_SEC_FETCH_DEST] => document
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+            [HTTP_ACCEPT_LANGUAGE] => pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+            [HTTP_COOKIE] => JSESSIONID=211FDB6522A0E5FF314DE9FD050AB507; cookielawinfo-checkbox-necessary=yes; cookielawinfo-checkbox-non-necessary=yes; _ga=GA1.1.385671996.1655403565; __gads=ID=cddf3acf5ba6c3fa-224c76ec5c7c009a:T=1655403565:RT=1655403565:S=ALNI_MZh58RckAjaudid11Wm-60mAVttDg; __gpi=UID=000006caa7f7f8a3:T=1655403565:RT=1655403565:S=ALNI_MaUOHviz8LSYUpyFUCCLLZcOB4qvw; _ga_H3EP89YF69=GS1.1.1655403564.1.1.1655404022.0; PHPSESSID=e068815c340a59bc1b3f03574a4f67f2
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+            [SERVER_SIGNATURE] => <address>Apache/2.4.54 (Debian) Server at localhost Port 8080</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.54 (Debian)
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => 172.20.0.5
+            [SERVER_PORT] => 8080
+            [REMOTE_ADDR] => 172.20.0.1
+            [DOCUMENT_ROOT] => /var/www/html
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [SERVER_ADMIN] => webmaster@localhost
+            [SCRIPT_FILENAME] => /var/www/html/index.php
+            [REMOTE_PORT] => 51420
+            [REDIRECT_URL] => /api/grupos
+            [REDIRECT_QUERY_STRING] => url=api/grupos
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => url=api/grupos
+            [REQUEST_URI] => /api/grupos
+            [SCRIPT_NAME] => /index.php
+            [PHP_SELF] => /index.php
+            [REQUEST_TIME_FLOAT] => 1660542399.1978
+            [REQUEST_TIME] => 1660542399
+            [argv] => Array
+                (
+                    [0] => url=api/grupos
+                )
+
+            [argc] => 1
+        )
+
+)
+
+ 
+ 
