@@ -4,13 +4,15 @@
 
 
 ## Orientações Windows
-- BAIXAR DOCKER DESKTOP
+- BAIXAR DOCKER DESKTOP(https://www.docker.com/products/docker-desktop/)
 - EXECUTAR .BAT
 
 ## Orientações Linux
 - recomendado UBUTU 20.04.4 LTS
 - executar o filename.sh
-- passo a passo(COMO EXECUTAR filename.sh)
+- passo a passo(COMO EXECUTAR filename.sh) para instalar o docker
+- passo a passo(COMO EXECUTAR init projeto.sh) para iniciar o projeto
+
 ## #PASSO 1: 
 -marcar o check-box em propriedades
 ![Captura de tela 2022-08-15 052536](https://user-images.githubusercontent.com/51290633/184603791-82d693f8-7949-4c64-bdfe-32954f3e749b.png)
