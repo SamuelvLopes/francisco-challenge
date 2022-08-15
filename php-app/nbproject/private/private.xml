@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Projetos/desafio-francisco/app/system/controller/Home.php</file>
-            <file>file:/F:/Projetos/desafio-francisco/app/system/controller/Produto.php</file>
-            <file>file:/F:/Projetos/desafio-francisco/app/system/controller/Grupo.php</file>
-            <file>file:/F:/Projetos/desafio-francisco/app/system/controller/Api.php</file>
+            <file>file:/F:/Projetos/desafio-francisco/php-app/system/controller/Api.php</file>
+            <file>file:/F:/Projetos/desafio-francisco/php-app/system/controller/Home.php</file>
+            <file>file:/F:/Projetos/desafio-francisco/php-app/system/model/Home_db.php</file>
         </group>
     </open-files>
 </project-private>

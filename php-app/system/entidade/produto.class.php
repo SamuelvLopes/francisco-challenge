@@ -49,7 +49,7 @@ class produto extends Connection{
     
     public function get_all(){
         
-        $sql='SELECT * FROM produto';
+        $sql="SELECT descricao 'desc',grupo ,ean,saldo_inicial 'saldo',unidade_medida 'und',tipo FROM produto";
         
         $result = $this->query($sql);
         $result = $this->get_array($result);

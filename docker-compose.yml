@@ -6,7 +6,7 @@ services:
     container_name: react_img
     restart: always
     ports:
-     - '3001:3000'
+     - '3000:3000'
     volumes:
      - './react-app:/app'
      - './react-app/app/node_modules'

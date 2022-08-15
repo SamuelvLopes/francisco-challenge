@@ -1,6 +1,6 @@
 <?php
 
-class BaseController{
+class BaseController extends Connection{
 
     function __construct() 
     {
@@ -17,6 +17,10 @@ class BaseController{
     public function get_grupo(){
         
         return new grupo();
+    } 
+    public function logger(){
+        
+        return new Logger();
     } 
     
     public function view($view,$data=[]){

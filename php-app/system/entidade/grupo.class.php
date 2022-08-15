@@ -89,7 +89,7 @@ class grupo extends Connection{
     
     public function get_all() {
         
-        $sql="SELECT * FROM produto_grupo";
+        $sql="SELECT pg_id 'id',pg_descricao,(SELECT count(*) from produto where grupo=pg.pg_id) as 'qtd' from produto_grupo pg";
         return $this->query($sql);    
         
     }
