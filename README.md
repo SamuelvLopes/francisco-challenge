@@ -1,5 +1,8 @@
 ### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
 
+### Após o projeto ser concluido deve ser acessado em localhost
+
+
 ## Orientações Windows
 - BAIXAR DOCKER DESKTOP
 - EXECUTAR .BAT
