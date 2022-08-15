@@ -1,3 +1,12 @@
+### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
+
+## Orientações Windows
+## BAIXAR DOCKER DESKTOP
+## EXECUTAR .BAT
+
+## Orientações Linux
+## Baixar
+
 ## docker build -t php_ext .
 
 
