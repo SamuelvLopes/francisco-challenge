@@ -184,3 +184,16 @@ Array
 
  
  
+Array
+(
+    [0] => Array
+        (
+            [description] => burritinho
+            [ean] => 1232432
+            [saldo] => 2343
+        )
+
+)
+
+ 
+ 
