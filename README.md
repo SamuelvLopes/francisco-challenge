@@ -1,11 +1,11 @@
-### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
+exec_windows.bat### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
 
 ### Após o projeto ser concluido deve ser acessado em localhost
 
 
 ## Orientações Windows
 - BAIXAR DOCKER DESKTOP(https://www.docker.com/products/docker-desktop/)
-- EXECUTAR .BAT
+- EXECUTAR exec_windows.bat
 
 ## Orientações Linux
 - recomendado UBUTU 20.04.4 LTS
