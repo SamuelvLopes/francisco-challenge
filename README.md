@@ -1,7 +1,13 @@
-exec_windows.bat### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
+### 	INSTRUÇÕES PARA SUBIR UMA INSTANCIA DO PROJETO EM UMA MAQUINA zerada
 
 ### Após o projeto ser concluido deve ser acessado em localhost
 
+## O projeto está configurado para usar as portas
+-80->ngix frontend react já buildado
+-3000->ambiente para dev react
+-8080->backend-php
+-3306->mysql
+CASO OUTRA APLICAÇÃO JÁ ESTEJA USANDO ESSAS PORTAS OCORRERÁ UM ERRO.
 
 ## Orientações Windows
 - BAIXAR DOCKER DESKTOP(https://www.docker.com/products/docker-desktop/)
